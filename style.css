@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to left, #808888, #f9f9f9);
+  color: black;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#cabecalho {
+  border-radius: 5%;
+}
+
+#foto {
+  max-width: 1080px; /* Máximo da largura da imagem */
+  width: 100%;
+  max-height: 500px; /* Máximo da altura da imagem */
+  min-height: auto; /* Mínimo da altura, por padrão “auto” */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  margin-top: -1px;
+}
+
+#logo {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#nome {
+  font-size: 1em;
+  text-align: center;
+  color: black;
+  margin-top: 0.5rem;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+#links a img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+#linkSpotify,
+#linkLivreSpotify,
+#linkLivreYouTube,
+#linkLivreDeezer,
+#linkDeezer,
+#linkYouTube {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+  margin: 5px;
+  align-items: center;
+  width: 45em;
+  justify-content: center;
+  transition: 0.5s ease-in;
+  border-radius: 10px;
+}
+
+#linkSpotify,
+#linkLivreSpotify {
+  background-color: black;
+}
+
+#linkLivreYouTube,
+#linkYouTube {
+  background-color: #810400;
+}
+
+#linkLivreDeezer,
+#linkDeezer {
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ffed00,
+    #ff0092,
+    #c2ff00,
+    #00c7f2,
+    #c1f1fc
+  );
+}
+
+#linkSpotify:hover,
+#linkLivreSpotify:hover,
+#linkLivreYouTube:hover,
+#linkYouTube:hover,
+#linkLivreDeezer:hover,
+#linkDeezer:hover {
+  color: black;
+  background: linear-gradient(to left, #808888, #f9f9f9);
+}
+
+#rodape {
+  font-style: italic;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+@media (max-height: 700px) {
+  #foto {
+    width: 100%;
+    height: 100%;
+  }
+
+  #logo {
+    margin-top: -20px;
+    height: 50px;
+    width: 50px;
+  }
+
+  #linkSpotify,
+  #linkLivreSpotify,
+  #linkLivreYouTube,
+  #linkLivreDeezer,
+  #linkDeezer,
+  #linkYouTube {
+    margin-top: 0px;
+    font-size: 15px;
+    padding: 5px;
+    width: 80vw;
+  }
+}
+
+@media (max-height: 800px) {
+  #linkSpotify,
+  #linkLivreSpotify,
+  #linkLivreYouTube,
+  #linkLivreDeezer,
+  #linkDeezer,
+  #linkYouTube {
+    margin-top: 0px;
+    font-size: 15px;
+    padding: 5px;
+    width: 80vw;
+  }
+}
+
+@media (max-height: 900px) {
+  #linkSpotify,
+  #linkLivreSpotify,
+  #linkLivreYouTube,
+  #linkLivreDeezer,
+  #linkDeezer,
+  #linkYouTube {
+    margin-top: 0px;
+    font-size: 15px;
+    padding: 5px;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 400px) {
+  #linkSpotify,
+  #linkLivreSpotify,
+  #linkLivreYouTube,
+  #linkLivreDeezer,
+  #linkDeezer,
+  #linkYouTube {
+    margin-top: 0px;
+    font-size: 15px;
+    padding: 1px;
+    width: 80vw;
+  }
+
+  body {
+    width: 100vw;
+  }
+}
